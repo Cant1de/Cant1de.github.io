@@ -1,7 +1,830 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.666</p>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+
+
+/* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
+
+@include-when-export url(https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
+/* =========== */
+
+/* pt-serif-regular - latin */
+/* pt-serif-italic - latin */
+/* pt-serif-700 - latin */
+/* pt-serif-700italic - latin */
+:root {
+	--active-file-bg-color: #dadada;
+	--active-file-bg-color: rgba(32, 43, 51, 0.63);
+	--active-file-text-color: white;
+	--bg-color: #f3f2ee;
+	--text-color: #1f0909;
+	--control-text-color: #444;
+	--rawblock-edit-panel-bd: #e5e5e5;
+
+	--select-text-bg-color: rgba(32, 43, 51, 0.63);
+  --select-text-font-color: white;
+}
+
+pre {
+	--select-text-bg-color: #36284e;
+	--select-text-font-color: #fff;
+}
+
+html {
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+}
+
+html, body {
+	background-color: #f3f2ee;
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+	color: #1f0909;
+	line-height: 1.5em;
+}
+
+/*#write {
+	overflow-x: auto;
+    max-width: initial;
+	padding-left: calc(50% - 17em);
+    padding-right: calc(50% - 17em);
+}
+
+@media (max-width: 36em) {
+ 	#write {
+ 		padding-left: 1em;
+    	padding-right: 1em;
+ 	}
+}*/
+
+#write {
+	max-width: 40em;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+			max-width: 914px;
+	}
+}
+
+ol li {
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+ul li {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* styles */
+
+/* ====== */
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 1.875em;
+	/*30 / 16*/
+	line-height: 1.6em;
+	/* 48 / 30*/
+	margin-top: 2em;
+}
+h2,
+h3 {
+	font-size: 1.3125em;
+	/*21 / 16*/
+	line-height: 1.15;
+	/*24 / 21*/
+	margin-top: 2.285714em;
+	/*48 / 21*/
+	margin-bottom: 1.15em;
+	/*24 / 21*/
+}
+h3 {
+	font-weight: normal;
+}
+h4 {
+	font-size: 1.125em;
+	/*18 / 16*/
+	margin-top: 2.67em;
+	/*48 / 18*/
+}
+h5,
+h6 {
+	font-size: 1em;
+	/*16*/
+}
+h1 {
+	border-bottom: 1px solid;
+	margin-bottom: 1.875em;
+	padding-bottom: 0.8125em;
+}
+/* links */
+
+a {
+	text-decoration: none;
+	color: #065588;
+}
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+/* block spacing */
+
+p,
+blockquote,
+.md-fences {
+	margin-bottom: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1.5em;
+}
+/* blockquote */
+
+blockquote {
+	font-style: italic;
+	border-left: 5px solid;
+	margin-left: 2em;
+	padding-left: 1em;
+}
+/* lists */
+
+ul,
+ol {
+	margin: 0 0 1.5em 1.5em;
+}
+/* tables */
+.md-meta,.md-before, .md-after {
+	color:#999;
+}
+
+table {
+	margin-bottom: 1.5em;
+	/*24 / 16*/
+	font-size: 1em;
+	/* width: 100%; */
+}
+thead th,
+tfoot th {
+	padding: .25em .25em .25em .4em;
+	text-transform: uppercase;
+}
+th {
+	text-align: left;
+}
+td {
+	vertical-align: top;
+	padding: .25em .25em .25em .4em;
+}
+
+code,
+.md-fences {
+	background-color: #dadada;
+}
+
+code {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.md-fences {
+	margin-left: 2em;
+	margin-bottom: 3em;
+	padding-left: 1ch;
+	padding-right: 1ch;
+}
+
+pre,
+code,
+tt {
+	font-size: .875em;
+	line-height: 1.714285em;
+}
+/* some fixes */
+
+h1 {
+	line-height: 1.3em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+p + ul,
+p + ol{
+	margin-top: .5em;
+}
+
+h3 + ul,
+h4 + ul,
+h5 + ul,
+h6 + ul,
+h3 + ol,
+h4 + ol,
+h5 + ol,
+h6 + ol {
+	margin-top: .5em;
+}
+
+li > ul,
+li > ol {
+	margin-top: inherit;
+	margin-bottom: 0;
+}
+
+li ol>li {
+	list-style-type: lower-alpha;
+}
+
+li li ol>li{
+	list-style-type: lower-roman;
+}
+
+h2,
+h3 {
+	margin-bottom: .75em;
+}
+hr {
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid;
+	border-left: none;
+}
+h1 {
+	border-color: #c5c5c5;
+}
+blockquote {
+	border-color: #bababa;
+	color: #656565;
+}
+
+blockquote ul,
+blockquote ol {
+	margin-left:0;
+}
+
+.ty-table-edit {
+	background-color: transparent;
+}
+thead {
+	background-color: #dadada;
+}
+tr:nth-child(even) {
+	background: #e8e7e7;
+}
+hr {
+	border-color: #c5c5c5;
+}
+.task-list{
+	padding-left: 1rem;
+}
+
+.md-task-list-item {
+	padding-left: 1.5rem;
+	list-style-type: none;
+}
+
+.md-task-list-item > input:before {
+	content: '\221A';
+	display: inline-block;
+	width: 1.25rem;
+  	height: 1.6rem;
+	vertical-align: middle;
+	text-align: center;
+	color: #ddd;
+	background-color: #F3F2EE;
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before{
+	color: inherit;
+}
+
+#write pre.md-meta-block {
+	min-height: 1.875rem;
+	color: #555;
+	border: 0px;
+	background: transparent;
+	margin-top: -4px;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.md-image>.md-meta {
+	color: #9B5146;
+}
+
+.md-image>.md-meta{
+	font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', serif;
+}
+
+
+#write>h3.md-focus:before{
+	left: -1.5rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h4.md-focus:before{
+	left: -1.5rem;
+	top: .25rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h5.md-focus:before{
+	left: -1.5rem;
+	top: .0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h6.md-focus:before{
+	left: -1.5rem;
+	top: 0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+
+.md-toc:focus .md-toc-content{
+	margin-top: 19px;
+}
+
+.md-toc-content:empty:before{
+	color: #065588;
+}
+.md-toc-item {
+	color: #065588;
+}
+#write div.md-toc-tooltip {
+	background-color: #f3f2ee;
+}
+
+#typora-sidebar {
+	background-color: #f3f2ee;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+  	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+}
+
+.pin-outline #typora-sidebar {
+	background: inherit;
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+.pin-outline #typora-sidebar:hover .outline-title-wrapper {
+	border-left:1px dashed;
+}
+
+.outline-item:hover {
+  background-color: #dadada;
+  border-left: 28px solid #dadada;
+  border-right: 18px solid #dadada;
+}
+
+.typora-node .outline-item:hover {
+  	border-right: 28px solid #dadada;
+}
+
+.outline-expander:before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  font-size:14px;
+  top: 1px;
+}
+
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  content: "\f0d7";
+}
+
+.modal-content {
+	background-color: #f3f2ee;
+}
+
+.auto-suggest-container ul li {
+	list-style-type: none;
+}
+
+/** UI for electron */
+
+.megamenu-menu,
+#top-titlebar, #top-titlebar *,
+.megamenu-content {
+	background: #f3f2ee;
+	color: #1f0909;
+}
+
+.megamenu-menu-header {
+	border-bottom: 1px dashed #202B33;
+}
+
+.megamenu-menu {
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+header, .context-menu, .megamenu-content, footer {
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+    color: #1f0909;
+}
+
+#megamenu-back-btn {
+	color: #1f0909;
+	border-color: #1f0909;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title:before {
+	color: #1f0909;
+}
+
+.megamenu-menu-list li a:hover, .megamenu-menu-list li a.active {
+	color: inherit;
+	background-color: #e8e7df;
+}
+
+.long-btn:hover {
+	background-color: #e8e7df;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: transparent !important;
+}
+
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+    color: inherit;
+}
+
+.megamenu-menu-panel .btn {
+	background-color: #D2D1D1;
+}
+
+.btn-default {
+	background-color: transparent;
+}
+
+.typora-sourceview-on #toggle-sourceview-btn,
+.ty-show-word-count #footer-word-count {
+	background: #c7c5c5;
+}
+
+#typora-quick-open {
+    background-color: inherit;
+}
+
+.md-diagram-panel {
+	margin-top: 8px;
+}
+
+.file-list-item-file-name {
+	font-weight: initial;
+}
+
+.file-list-item-summary {
+	opacity: 1;
+}
+
+.file-list-item {
+	color: #777;
+}
+
+.file-list-item.active {
+	background-color: inherit;
+	color: black;
+}
+
+.ty-side-sort-btn.active {
+	background-color: inherit;
+}
+
+.file-list-item.active .file-list-item-file-name  {
+	font-weight: bold;
+}
+
+.file-list-item{
+    opacity:1 !important;
+}
+
+.file-library-node.active>.file-node-background{
+	background-color: rgba(32, 43, 51, 0.63);
+	background-color: var(--active-file-bg-color);
+}
+
+.file-tree-node.active>.file-node-content{
+	color: white;
+	color: var(--active-file-text-color);
+}
+
+.md-task-list-item>input {
+	margin-left: -1.7em;
+	margin-top: calc(1rem - 12px);
+	-webkit-appearance: button;
+}
+
+input {
+	border: 1px solid #aaa;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title,
+.megamenu-menu-header:hover, 
+.megamenu-menu-header:focus {
+	color: inherit;
+}
+
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+	opacity: 1;
+}
+
+/* https://github.com/typora/typora-issues/issues/2046 */
+.os-windows-7 strong,
+.os-windows-7 strong  {
+	font-weight: 760;
+}
+
+.ty-preferences .btn-default {
+	background: transparent;
+}
+
+.ty-preferences .window-header {
+	border-bottom: 1px dashed #202B33;
+	box-shadow: none;
+}
+
+#sidebar-loading-template, #sidebar-loading-template.file-list-item {
+	color: #777;
+}
+
+.searchpanel-search-option-btn.active {
+	background: #777;
+	color: white;
+}
+
+.export-detail, .light .export-detail, 
+.light .export-item.active, 
+.light .export-items-list-control {
+	background: #e0e0e0;
+	border-radius: 2px;
+	font-weight: 700;
+	color: inherit
+}
+
+
+</style><title>Latine</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='拉丁文基础知识记录'><span>拉丁文基础知识记录</span></h1><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#拉丁文基础知识记录">拉丁文基础知识记录</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n3"><a class="md-toc-inner" href="#动词-1">动词</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n4"><a class="md-toc-inner" href="#主动语态现在系统">主动语态现在系统</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n204"><a class="md-toc-inner" href="#主动语态完成系统">主动语态完成系统</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n241"><a class="md-toc-inner" href="#被动语态现在系统">被动语态现在系统</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n404"><a class="md-toc-inner" href="#被动语态完成系统">被动语态完成系统</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n406"><a class="md-toc-inner" href="#分词形容词性动词）">分词（形容词性动词）</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n433"><a class="md-toc-inner" href="#名词性动词">名词性动词</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n434"><a class="md-toc-inner" href="#不定式">不定式</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n461"><a class="md-toc-inner" href="#名词与形容词">名词与形容词</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n622"><a class="md-toc-inner" href="#代词-1">代词</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n623"><a class="md-toc-inner" href="#人称代词">人称代词</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n706"><a class="md-toc-inner" href="#关系代词">关系代词</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n765"><a class="md-toc-inner" href="#疑问代词">疑问代词</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n817"><a class="md-toc-inner" href="#数词">数词</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n818"><a class="md-toc-inner" href="#基数词">基数词</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n820"><a class="md-toc-inner" href="#一-unus">一 UNUS</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n854"><a class="md-toc-inner" href="#二-duo">二 DUO</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n888"><a class="md-toc-inner" href="#三-tres">三 TRES</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n914"><a class="md-toc-inner" href="#千-mille">千 MILLE</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n942"><a class="md-toc-inner" href="#状语">状语</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n943"><a class="md-toc-inner" href="#带介词夺格">带介词夺格</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n974"><a class="md-toc-inner" href="#无介词夺格">无介词夺格</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n993"><a class="md-toc-inner" href="#词汇表">词汇表</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n994"><a class="md-toc-inner" href="#动词-2">动词</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1326"><a class="md-toc-inner" href="#名词">名词</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1577"><a class="md-toc-inner" href="#形容词">形容词</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1688"><a class="md-toc-inner" href="#代词-2">代词</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1714"><a class="md-toc-inner" href="#副词">副词</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1797"><a class="md-toc-inner" href="#介词">介词</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1844"><a class="md-toc-inner" href="#连词">连词</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1898"><a class="md-toc-inner" href="#特例">特例</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1899"><a class="md-toc-inner" href="#sum-to-be">SUM (to be)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1905"><a class="md-toc-inner" href="#possum-be-able-to-can">POSSUM (be able to/ can)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1943"><a class="md-toc-inner" href="#ille--hoc-that--this">ILLE / HOC (that / this)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n2042"><a class="md-toc-inner" href="#unus-nauta">UNUS NAUTA</a></span></p></div><h2 id='动词-1'><span>动词</span></h2><h3 id='主动语态现在系统'><span>主动语态现在系统</span></h3><figure><table><thead><tr><th><span>语气</span></th><th><span>时态</span></th><th><span>人数</span></th><th><span>第一变位法</span></th><th><span>第二变位法</span></th><th><span>第三变位法</span></th><th><span>第三变位法(-io)</span></th><th><span>第四变位法</span></th></tr></thead><tbody><tr><td><span>不定式</span></td><td>&nbsp;</td><td>&nbsp;</td><td><span>-</span><strong><span>a</span></strong><span>re</span></td><td><span>-</span><strong><span>e</span></strong><span>re</span></td><td><span>-ere</span></td><td><span>-ere</span></td><td><span>-</span><strong><span>i</span></strong><span>re</span></td></tr><tr><td><span>直陈式</span></td><td><span>现在</span></td><td><span>单一</span></td><td><span>-</span><strong><span>o</span></strong><span>/-m</span></td><td><span>-e</span><strong><span>o</span></strong></td><td><span>-</span><strong><span>o</span></strong></td><td><span>-i</span><strong><span>o</span></strong></td><td><span>-i</span><strong><span>o</span></strong></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>单二</span></td><td><span>-</span><strong><span>a</span></strong><span>s</span></td><td><span>-</span><strong><span>e</span></strong><span>s</span></td><td><span>-is</span></td><td><span>-is</span></td><td><span>-</span><strong><span>i</span></strong><span>s</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>单三</span></td><td><span>-</span><strong><span>a</span></strong><span>t</span></td><td><span>-</span><strong><span>e</span></strong><span>t</span></td><td><span>-it</span></td><td><span>-it</span></td><td><span>-it</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复一</span></td><td><span>-</span><strong><span>a</span></strong><span>mus</span></td><td><span>-</span><strong><span>e</span></strong><span>mus</span></td><td><span>-imus</span></td><td><span>-imus</span></td><td><span>-</span><strong><span>i</span></strong><span>mus</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复二</span></td><td><span>-</span><strong><span>a</span></strong><span>tis</span></td><td><span>-</span><strong><span>e</span></strong><span>tis</span></td><td><span>-itis</span></td><td><span>-itis</span></td><td><span>-</span><strong><span>i</span></strong><span>tis</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复三</span></td><td><span>-ant</span></td><td><span>-ent</span></td><td><span>-unt</span></td><td><span>-iunt</span></td><td><span>-iunt</span></td></tr><tr><td>&nbsp;</td><td><span>将来</span></td><td><span>单一</span></td><td><span>-</span><strong><span>a</span></strong><span>bo</span></td><td><span>-</span><strong><span>e</span></strong><span>bo</span></td><td><span>-am</span></td><td><span>-iam</span></td><td><span>-iam</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>单二</span></td><td><span>-</span><strong><span>a</span></strong><span>bis</span></td><td><span>-</span><strong><span>e</span></strong><span>bis</span></td><td><span>-es</span></td><td><span>-i</span><strong><span>e</span></strong><span>s</span></td><td><span>-i</span><strong><span>e</span></strong><span>s</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>单三</span></td><td><span>-</span><strong><span>a</span></strong><span>bit</span></td><td><span>-</span><strong><span>e</span></strong><span>bit</span></td><td><span>-et</span></td><td><span>-iet</span></td><td><span>-iet</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复一</span></td><td><span>-</span><strong><span>a</span></strong><span>bimus</span></td><td><span>-</span><strong><span>e</span></strong><span>bimus</span></td><td><span>-</span><strong><span>e</span></strong><span>mus</span></td><td><span>-i</span><strong><span>e</span></strong><span>mus</span></td><td><span>-i</span><strong><span>e</span></strong><span>mus</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复二</span></td><td><span>-</span><strong><span>a</span></strong><span>bitis</span></td><td><span>-</span><strong><span>e</span></strong><span>bitis</span></td><td><span>-</span><strong><span>e</span></strong><span>tis</span></td><td><span>-i</span><strong><span>e</span></strong><span>tis</span></td><td><span>-i</span><strong><span>e</span></strong><span>tis</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复三</span></td><td><span>-</span><strong><span>a</span></strong><span>bunt</span></td><td><span>-</span><strong><span>e</span></strong><span>bunt</span></td><td><span>-ent</span></td><td><span>-ient</span></td><td><span>-ient</span></td></tr><tr><td>&nbsp;</td><td><span>未完成</span></td><td><span>单一</span></td><td><span>-</span><strong><span>a</span></strong><span>bam</span></td><td><span>-</span><strong><span>e</span></strong><span>bam</span></td><td><span>-</span><strong><span>e</span></strong><span>bam</span></td><td><span>-i</span><strong><span>e</span></strong><span>bam</span></td><td><span>-i</span><strong><span>e</span></strong><span>bam</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>单二</span></td><td><span>-</span><strong><span>a</span></strong><span>b</span><strong><span>a</span></strong><span>s</span></td><td><span>-</span><strong><span>e</span></strong><span>bas</span></td><td><span>-</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>s</span></td><td><span>-i</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>s</span></td><td><span>-i</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>s</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>单三</span></td><td><span>-</span><strong><span>a</span></strong><span>bat</span></td><td><span>-</span><strong><span>e</span></strong><span>bat</span></td><td><span>-</span><strong><span>e</span></strong><span>bat</span></td><td><span>-i</span><strong><span>e</span></strong><span>bat</span></td><td><span>-i</span><strong><span>e</span></strong><span>bat</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复一</span></td><td><span>-</span><strong><span>a</span></strong><span>b</span><strong><span>a</span></strong><span>mus</span></td><td><span>-</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>mus</span></td><td><span>-</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>mus</span></td><td><span>-i</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>mus</span></td><td><span>-i</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>mus</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复二</span></td><td><span>-</span><strong><span>a</span></strong><span>b</span><strong><span>a</span></strong><span>tis</span></td><td><span>-</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>tis</span></td><td><span>-</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>tis</span></td><td><span>-i</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>tis</span></td><td><span>-i</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>tis</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复三</span></td><td><span>-</span><strong><span>a</span></strong><span>bant</span></td><td><span>-</span><strong><span>e</span></strong><span>bant</span></td><td><span>-</span><strong><span>e</span></strong><span>bant</span></td><td><span>-i</span><strong><span>e</span></strong><span>bant</span></td><td><span>-i</span><strong><span>e</span></strong><span>bant</span></td></tr><tr><td><span>命令式</span></td><td><span>现在</span></td><td><span>单</span></td><td><span>-</span><strong><span>a</span></strong></td><td><span>-</span><strong><span>e</span></strong></td><td><span>-e</span></td><td><span>-e</span></td><td><span>-</span><strong><span>i</span></strong></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复</span></td><td><span>-</span><strong><span>a</span></strong><span>te</span></td><td><span>-</span><strong><span>e</span></strong><span>te</span></td><td><span>-ite</span></td><td><span>-ite</span></td><td><span>-</span><strong><span>i</span></strong><span>te</span></td></tr></tbody></table></figure><h3 id='主动语态完成系统'><span>主动语态完成系统</span></h3><figure><table><thead><tr><th>&nbsp;</th><th><span>完成时</span></th><th><span>过去完成时</span></th><th><span>将来完成时</span></th></tr></thead><tbody><tr><td><span>单一</span></td><td><span>-</span><strong><span>i</span></strong></td><td><span>-eram</span></td><td><span>-er</span><strong><span>o</span></strong></td></tr><tr><td><span>单二</span></td><td><span>-ist</span><strong><span>i</span></strong></td><td><span>-er</span><strong><span>a</span></strong><span>s</span></td><td><span>-eris</span></td></tr><tr><td><span>单三</span></td><td><span>-it</span></td><td><span>-erat</span></td><td><span>-erit</span></td></tr><tr><td><span>复一</span></td><td><span>-imus</span></td><td><span>-er</span><strong><span>a</span></strong><span>mus</span></td><td><span>-erimus</span></td></tr><tr><td><span>复二</span></td><td><span>-istis</span></td><td><span>-er</span><strong><span>a</span></strong><span>tis</span></td><td><span>-eritis</span></td></tr><tr><td><span>复三</span></td><td><span>-</span><strong><span>e</span></strong><span>runt/-</span><strong><span>e</span></strong><span>re</span></td><td><span>-erant</span></td><td><span>-erint</span></td></tr></tbody></table></figure><h3 id='被动语态现在系统'><span>被动语态现在系统</span></h3><figure><table><thead><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th><span>一变</span></th><th><span>二变</span></th><th><span>三变</span></th><th><span>四变</span></th></tr></thead><tbody><tr><td><span>不定式</span></td><td>&nbsp;</td><td>&nbsp;</td><td><span>-</span><strong><span>a</span></strong><span>ri</span></td><td><span>-</span><strong><span>e</span></strong><span>ri</span></td><td><span>-</span><strong><span>i</span></strong></td><td><span>-</span><strong><span>i</span></strong><span>ri</span></td></tr><tr><td><span>直陈式</span></td><td><span>现在</span></td><td><span>单一</span></td><td><span>-or</span></td><td><span>-eor</span></td><td><span>-or(-ior</span><sup><span>i</span></sup><span>)</span></td><td><span>-ior</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>单二</span></td><td><span>-</span><strong><span>a</span></strong><span>ris</span></td><td><span>-</span><strong><span>e</span></strong><span>ris</span></td><td><span>-eris</span></td><td><span>-</span><strong><span>i</span></strong><span>ris</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>单三</span></td><td><span>-</span><strong><span>a</span></strong><span>tur</span></td><td><span>-</span><strong><span>e</span></strong><span>tur</span></td><td><span>-itur</span></td><td><span>-</span><strong><span>i</span></strong><span>tur</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复一</span></td><td><span>-</span><strong><span>a</span></strong><span>mur</span></td><td><span>-</span><strong><span>e</span></strong><span>mur</span></td><td><span>-imur</span></td><td><span>-</span><strong><span>i</span></strong><span>mur</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复二</span></td><td><span>-</span><strong><span>a</span></strong><span>min</span><strong><span>i</span></strong></td><td><span>-</span><strong><span>e</span></strong><span>min</span><strong><span>i</span></strong></td><td><span>-imin</span><strong><span>i</span></strong></td><td><span>-</span><strong><span>i</span></strong><span>min</span><strong><span>i</span></strong></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复三</span></td><td><span>-antur</span></td><td><span>-entur</span></td><td><span>-untur(-iuntur)</span></td><td><span>-iuntur</span></td></tr><tr><td>&nbsp;</td><td><span>将来</span></td><td><span>单一</span></td><td><span>-</span><strong><span>a</span></strong><span>bor</span></td><td><span>-</span><strong><span>e</span></strong><span>bor</span></td><td><span>-ar(-iar</span><sup><span>i</span></sup><span>)</span></td><td><span>-iar</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>单二</span></td><td><span>-</span><strong><span>a</span></strong><span>beris</span></td><td><span>-</span><strong><span>e</span></strong><span>beris</span></td><td><span>-</span><strong><span>e</span></strong><span>ris(-i-</span><sup><span>i</span></sup><span>)</span></td><td><span>-i</span><strong><span>e</span></strong><span>ris</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>单三</span></td><td><span>-</span><strong><span>a</span></strong><span>bitur</span></td><td><span>-</span><strong><span>e</span></strong><span>bitur</span></td><td><span>-</span><strong><span>e</span></strong><span>tur(-i-</span><sup><span>i</span></sup><span>)</span></td><td><span>-i</span><strong><span>e</span></strong><span>tur</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复一</span></td><td><span>-</span><strong><span>a</span></strong><span>bimur</span></td><td><span>-</span><strong><span>e</span></strong><span>bimur</span></td><td><span>-</span><strong><span>e</span></strong><span>mur(-i-</span><sup><span>i</span></sup><span>)</span></td><td><span>-i</span><strong><span>e</span></strong><span>mur</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复二</span></td><td><span>-</span><strong><span>a</span></strong><span>bimin</span><strong><span>i</span></strong></td><td><span>-</span><strong><span>e</span></strong><span>bimin</span><strong><span>i</span></strong></td><td><span>-</span><strong><span>e</span></strong><span>min</span><strong><span>i</span></strong><span>(-i-</span><sup><span>i</span></sup><span>)</span></td><td><span>-i</span><strong><span>e</span></strong><span>min</span><strong><span>i</span></strong></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复三</span></td><td><span>-</span><strong><span>a</span></strong><span>buntur</span></td><td><span>-</span><strong><span>e</span></strong><span>buntur</span></td><td><span>-entur(-i-</span><sup><span>i</span></sup><span>)</span></td><td><span>-ientur</span></td></tr><tr><td>&nbsp;</td><td><span>未完成</span></td><td><span>单一</span></td><td><span>-</span><strong><span>a</span></strong><span>bar</span></td><td><span>-</span><strong><span>e</span></strong><span>bar</span></td><td><span>-</span><strong><span>e</span></strong><span>bar(-i</span><strong><span>e</span></strong><span>bar</span><sup><span>i</span></sup><span>)</span></td><td><span>-i</span><strong><span>e</span></strong><span>bar</span><sup><span>i</span></sup></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>单二</span></td><td><span>-</span><strong><span>a</span></strong><span>b</span><strong><span>a</span></strong><span>ris</span></td><td><span>-</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>ris</span></td><td><span>-</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>ris(-i-</span><sup><span>i</span></sup><span>)</span></td><td><span>-i</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>ris</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>单三</span></td><td><span>-</span><strong><span>a</span></strong><span>b</span><strong><span>a</span></strong><span>tur</span></td><td><span>-</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>tur</span></td><td><span>-</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>tur(-i-</span><sup><span>i</span></sup><span>)</span></td><td><span>-i</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>tur</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复一</span></td><td><span>-</span><strong><span>a</span></strong><span>b</span><strong><span>a</span></strong><span>mur</span></td><td><span>-</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>mur</span></td><td><span>-</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>mur(-i-</span><sup><span>i</span></sup><span>)</span></td><td><span>-i</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>mur</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复二</span></td><td><span>-</span><strong><span>a</span></strong><span>b</span><strong><span>a</span></strong><span>min</span><strong><span>i</span></strong></td><td><span>-</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>min</span><strong><span>i</span></strong></td><td><span>-</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>min</span><strong><span>i</span></strong><span>(-i-</span><sup><span>i</span></sup><span>)</span></td><td><span>-i</span><strong><span>e</span></strong><span>b</span><strong><span>a</span></strong><span>min</span><strong><span>i</span></strong></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>复三</span></td><td><span>-</span><strong><span>a</span></strong><span>bantur</span></td><td><span>-</span><strong><span>e</span></strong><span>bantur</span></td><td><span>-</span><strong><span>e</span></strong><span>bantur(-i-</span><sup><span>i</span></sup><span>)</span></td><td><span>-i</span><strong><span>e</span></strong><span>bantur</span></td></tr></tbody></table></figure><p><sup><span>(1)</span></sup><span>:第一二变位法单二结尾的ris也可以变为re</span></p><h3 id='被动语态完成系统'><span>被动语态完成系统</span></h3><p><span>完成时： -us/-a/-um +sum/es/est</span>
+<span>				</span><span>  -i/-ae/-am +sumus/estis/sunt</span>
+<span>过去完成时： -us/-a/-um +eram/eras/erat</span>
+<span>				</span><span>  </span><span>		</span><span>-i/-ae/-am +eramus/eratis/erant</span>
+<span>将来完成时： -us/-a/-um +ero/eris/erit</span>
+<span>				</span><span>  </span><span>		</span><span>-i/-ae/-am +erimus/eritis/erunt</span></p><h3 id='分词形容词性动词）'><span>分词（形容词性动词）</span></h3><p><span>分词即具有形容词性的动词变形</span></p><figure><table><thead><tr><th>&nbsp;</th><th><span>主动态</span></th><th><span>被动态</span></th></tr></thead><tbody><tr><td><span>现在时</span></td><td><span>现在词干+ns (属格+ntis)</span></td><td><span>/</span></td></tr><tr><td><span>完成时</span></td><td><span>/</span></td><td><span>完成时被动分词词干+ us/ a/ um</span></td></tr><tr><td><span>将来时</span></td><td><span>完成时被动分词词干+ </span><strong><span>u</span></strong><span>rus/ </span><strong><span>u</span></strong><span>ra/ urum</span></td><td><span>现在词干+ ndus/ nda/ ndum</span></td></tr></tbody></table></figure><p><span>注意： </span></p><ol start='' ><li><span>第四变位法动词的现在词干变形为 -ie- （eg：audio → audiens，audiendus）</span></li><li><span>现在时主动态分词变格法同第三变格法形容词（i-词干第三变格法名词），唯单数夺格结尾可能是 -e/-</span><strong><span>i</span></strong><span>：若分词单独出现则为-</span><strong><span>i</span></strong><span>；非单独出现则为-e。（eg：a patre amant</span><em><span>i</span></em><span> / a patre filium amant</span><em><span>e</span></em><span>）</span></li><li><span>其余分词变形同第一第二变格法形容词。</span></li></ol><h3 id='名词性动词'><span>名词性动词</span></h3><h4 id='不定式'><span>不定式</span></h4><figure><table><thead><tr><th>&nbsp;</th><th><span>主动态</span></th><th><span>被动态</span></th></tr></thead><tbody><tr><td><span>现在时</span></td><td><span>现在时词干 -</span><strong><span>a</span></strong><span>re/ </span><strong><span>e</span></strong><span>re/ ere/ </span><strong><span>i</span></strong><span>re</span></td><td><span>现在时词干 -</span><strong><span>a</span></strong><span>r</span><strong><span>i</span></strong><span>/ </span><strong><span>e</span></strong><span>r</span><strong><span>i</span></strong><span>/ </span><strong><span>i</span></strong><span>/ </span><strong><span>i</span></strong><span>r</span><strong><span>i</span></strong></td></tr><tr><td><span>完成时</span></td><td><span>完成时词干 -isse</span></td><td><span>完成时被动分词 +esse</span></td></tr><tr><td><span>将来时</span></td><td><span>将来时主动分词 +esse</span></td><td><span>/</span></td></tr></tbody></table></figure><ol start='' ><li><span>做主语</span></li><li><span>做 debere(debeo)、posse(possum) 等的补充</span></li><li><span>做直接宾语 （eg：Iussit eos venire.  </span><em><span>He orders them to come.</span></em><span>）</span></li><li><span>在 dico(</span><em><span>say</span></em><span>), puto(</span><em><span>think</span></em><span>) 后面作为间接引语。（eg：Iulia putat se </span><strong><span>esse</span></strong><span> bellam puellam. </span><em><span>Julia thinks that she is a beautiful girl.</span></em><span> ）</span></li></ol><h2 id='名词与形容词'><span>名词与形容词</span></h2><ul><li><strong><span>主格</span></strong><span>：主语</span></li><li><strong><span>属格</span></strong><span>：表示另一个名词属于这个名词，一般后置</span></li><li><strong><span>与格</span></strong><span>：间接宾语</span></li><li><strong><span>宾格</span></strong><span>：直接宾语</span></li><li><strong><span>夺格</span></strong><span>：状语中，一般在介词后</span></li><li><strong><span>呼格</span></strong><span>：单独成句直接称呼时</span></li></ul><figure><table><thead><tr><th>&nbsp;</th><th><span>一变(f)-a</span></th><th><span>二变(m)-us</span></th><th><span>二变(m)-er</span></th><th><span>二变(N)</span></th><th><span>三变(f/m)</span></th><th><span>三变(n)</span></th><th><span>四变(f/m)</span></th><th><span>四变(N)</span></th><th><span>五变(F)</span><sup><span>5</span></sup></th></tr></thead><tbody><tr><td><span>单主</span></td><td><span>-a</span></td><td><span>-us</span></td><td><span>none (-er)</span></td><td><span>-um</span></td><td><span>(none)</span></td><td><span>(none)</span></td><td><span>-us</span></td><td><span>-</span><strong><span>u</span></strong></td><td><span>-</span><strong><span>e</span></strong><span>s</span></td></tr><tr><td><span>单属</span></td><td><span>-ae</span></td><td><span>-</span><strong><span>i</span></strong></td><td><span>-</span><strong><span>i</span></strong></td><td><span>-</span><strong><span>i</span></strong></td><td><span>-is</span></td><td><span>-is</span></td><td><span>-</span><strong><span>u</span></strong><span>s</span></td><td><span>-</span><strong><span>u</span></strong><span>s</span></td><td><span>-e</span><strong><span>i</span></strong><sup><span>5</span></sup></td></tr><tr><td><span>单与</span></td><td><span>-ae</span></td><td><span>-</span><strong><span>o</span></strong></td><td><span>-</span><strong><span>o</span></strong></td><td><span>-</span><strong><span>o</span></strong></td><td><span>-</span><strong><span>i</span></strong></td><td><span>-</span><strong><span>i</span></strong></td><td><span>-u</span><strong><span>i</span></strong></td><td><span>-</span><strong><span>u</span></strong></td><td><span>-e</span><strong><span>i</span></strong></td></tr><tr><td><span>单宾</span></td><td><span>-am</span></td><td><span>-um</span></td><td><span>-um</span></td><td><span>-um</span></td><td><span>-em</span></td><td><span>(none)</span></td><td><span>-um</span></td><td><span>-</span><strong><span>u</span></strong></td><td><span>-em</span></td></tr><tr><td><span>单夺</span></td><td><span>-</span><strong><span>a</span></strong></td><td><span>-</span><strong><span>o</span></strong></td><td><span>-</span><strong><span>o</span></strong></td><td><span>-</span><strong><span>o</span></strong></td><td><span>-e(-</span><strong><span>i</span></strong><sup><span>a</span></sup><span>)</span></td><td><span>-e (-i</span><sup><span>i</span></sup><span>)</span></td><td><span>-</span><strong><span>u</span></strong></td><td><span>-</span><strong><span>u</span></strong></td><td><span>-</span><strong><span>e</span></strong></td></tr><tr><td><span>单呼</span></td><td><span>-a</span></td><td><span>-e(-ius&gt;&gt;-</span><strong><span>i</span></strong><span>)</span></td><td><span>none (-er)</span></td><td><span>-um</span></td><td><span>(none)</span></td><td><span>(none)</span></td><td><span>-us</span></td><td><span>-</span><strong><span>u</span></strong></td><td><span>-</span><strong><span>e</span></strong><span>s</span></td></tr><tr><td><span>复主</span></td><td><span>-ae</span></td><td><span>-</span><strong><span>i</span></strong></td><td><span>-</span><strong><span>i</span></strong></td><td><span>-a</span></td><td><span>-</span><strong><span>e</span></strong><span>s</span></td><td><span>-a(-ia</span><sup><span>i</span></sup><span>)</span></td><td><span>-</span><strong><span>u</span></strong><span>s</span></td><td><span>-ua</span></td><td><span>-</span><strong><span>e</span></strong><span>s</span></td></tr><tr><td><span>复属</span></td><td><span>-</span><strong><span>a</span></strong><span>rum</span></td><td><span>-</span><strong><span>o</span></strong><span>rum</span></td><td><span>-</span><strong><span>o</span></strong><span>rum</span></td><td><span>-</span><strong><span>o</span></strong><span>rum</span></td><td><span>-um (-ium</span><sup><span>i</span></sup><span>)</span></td><td><span>-um (-ium</span><sup><span>i</span></sup><span>)</span></td><td><span>-uum</span></td><td><span>-uum</span></td><td><span>-</span><strong><span>e</span></strong><span>rum</span></td></tr><tr><td><span>复与</span></td><td><span>-</span><strong><span>i</span></strong><span>s</span></td><td><span>-</span><strong><span>i</span></strong><span>s</span></td><td><span>-</span><strong><span>i</span></strong><span>s</span></td><td><span>-</span><strong><span>i</span></strong><span>s</span></td><td><span>-ibus</span></td><td><span>-ibus</span></td><td><span>-ibus</span></td><td><span>-ibus</span></td><td><span>-</span><strong><span>e</span></strong><span>bus</span></td></tr><tr><td><span>复宾</span></td><td><span>-</span><strong><span>a</span></strong><span>s</span></td><td><span>-</span><strong><span>o</span></strong><span>s</span></td><td><span>-</span><strong><span>o</span></strong><span>s</span></td><td><span>-a</span></td><td><span>-</span><strong><span>e</span></strong><span>s</span></td><td><span>-a (-ia</span><sup><span>i</span></sup><span>)</span></td><td><span>-</span><strong><span>u</span></strong><span>s</span></td><td><span>-ua</span></td><td><span>-</span><strong><span>e</span></strong><span>s</span></td></tr><tr><td><span>复夺</span></td><td><span>-</span><strong><span>i</span></strong><span>s</span></td><td><span>-</span><strong><span>i</span></strong><span>s</span></td><td><span>-</span><strong><span>i</span></strong><span>s</span></td><td><span>-</span><strong><span>i</span></strong><span>s</span></td><td><span>-ibus</span></td><td><span>-ibus</span></td><td><span>-ibus</span></td><td><span>-ibus</span></td><td><span>-</span><strong><span>e</span></strong><span>bus</span></td></tr><tr><td><span>复呼</span></td><td><span>-ae</span></td><td><span>-</span><strong><span>i</span></strong></td><td><span>-</span><strong><span>i</span></strong></td><td><span>-a</span></td><td><span>(none)</span></td><td><span>(none)</span></td><td><span>-</span><strong><span>u</span></strong><span>s</span></td><td><span>-ua</span></td><td><span>-</span><strong><span>e</span></strong><span>s</span></td></tr></tbody></table></figure><p><sup><span>i</span></sup><span> ：i-词干第三变格法名词，包括f/m（主属）</span><strong><span>等音节词</span></strong><span>（c</span><strong><span>i</span></strong><span>vis, c</span><strong><span>i</span></strong><span>vis），f/m（词根结尾）</span><strong><span>双辅音词</span></strong><span>（urbs, urbis），主格以-e、-al、-ar结尾的中性词（mare, maris），不规则词（v</span><strong><span>i</span></strong><span>s, v</span><strong><span>i</span></strong><span>s）</span></p><p><sup><span>a</span></sup><span>：三变形容词的其他形式同i-干三变名词，唯有单数夺格以 -</span><strong><span>i</span></strong><span> 结尾</span></p><p><sup><span>5</span></sup><span>：第五变格法有特例 di</span><strong><span>e</span></strong><span>s(day) 和 mer</span><strong><span>i</span></strong><span>di</span><strong><span>e</span></strong><span>s(midday) 是阳性，其余为阴性。当-e-前面为元音时，-e-变长音。</span></p><h2 id='代词-1'><span>代词</span></h2><h3 id='人称代词'><span>人称代词</span></h3><figure><table><thead><tr><th>&nbsp;</th><th><span>一</span></th><th><span>二</span></th><th><span>三M</span></th><th><span>三F</span></th><th><span>三N</span></th></tr></thead><tbody><tr><td><span>单主</span></td><td><span>ego</span></td><td><span>tu</span></td><td><em><span>is</span></em></td><td><span>ea</span></td><td><em><span>id</span></em></td></tr><tr><td><span>单属</span></td><td><span>me</span><strong><span>i</span></strong></td><td><span>tu</span><strong><span>i</span></strong></td><td><em><span>eius</span></em></td><td><em><span>eius</span></em></td><td><em><span>eius</span></em></td></tr><tr><td><span>单与</span></td><td><span>mihi</span></td><td><span>tibi</span></td><td><em><span>e</span><strong><span>i</span></strong></em></td><td><em><span>e</span><strong><span>i</span></strong></em></td><td><em><span>e</span><strong><span>i</span></strong></em></td></tr><tr><td><span>单宾</span></td><td><span>m</span><strong><span>e</span></strong></td><td><span>t</span><strong><span>e</span></strong></td><td><span>eum</span></td><td><span>eam</span></td><td><em><span>id</span></em></td></tr><tr><td><span>单夺</span></td><td><span>m</span><strong><span>e</span></strong></td><td><span>t</span><strong><span>e</span></strong></td><td><span>e</span><strong><span>o</span></strong></td><td><span>e</span><strong><span>a</span></strong></td><td><span>e</span><strong><span>o</span></strong></td></tr><tr><td><span>复主</span></td><td><span>n</span><strong><span>o</span></strong><span>s</span></td><td><span>v</span><strong><span>o</span></strong><span>s</span></td><td><span>e</span><strong><span>i</span></strong><span>/</span><em><span>i</span><strong><span>i</span></strong></em></td><td><span>eae</span></td><td><span>ea</span></td></tr><tr><td><span>复属</span></td><td><span>nostrum/nostr</span><strong><span>i</span></strong></td><td><span>vestrum/vestr</span><strong><span>i</span></strong></td><td><span>e</span><strong><span>o</span></strong><span>rum</span></td><td><span>e</span><strong><span>a</span></strong><span>rum</span></td><td><span>e</span><strong><span>o</span></strong><span>rum</span></td></tr><tr><td><span>复与</span></td><td><span>n</span><strong><span>o</span></strong><span>b</span><strong><span>i</span></strong><span>s</span></td><td><span>v</span><strong><span>o</span></strong><span>b</span><strong><span>i</span></strong><span>s</span></td><td><span>e</span><strong><span>i</span></strong><span>s</span></td><td><span>e</span><strong><span>i</span></strong><span>s</span></td><td><span>e</span><strong><span>i</span></strong><span>s</span></td></tr><tr><td><span>复宾</span></td><td><span>n</span><strong><span>o</span></strong><span>s</span></td><td><span>v</span><strong><span>o</span></strong><span>s</span></td><td><span>e</span><strong><span>o</span></strong><span>s</span></td><td><span>e</span><strong><span>a</span></strong><span>s</span></td><td><span>ea</span></td></tr><tr><td><span>复夺</span></td><td><span>n</span><strong><span>o</span></strong><span>b</span><strong><span>i</span></strong><span>s</span></td><td><span>v</span><strong><span>o</span></strong><span>b</span><strong><span>i</span></strong><span>s</span></td><td><span>e</span><strong><span>i</span></strong><span>s</span></td><td><span>e</span><strong><span>i</span></strong><span>s</span></td><td><span>e</span><strong><span>i</span></strong><span>s</span></td></tr></tbody></table></figure><p><span>表示属格 my, our, your 时总是用</span><strong><span>形容词</span></strong><span>（要变格的）</span>
+<span>meus, -a, -um: my</span>
+<span>tuus, -a, -um: your</span>
+<span>noster, -tra, -trum: our</span>
+<span>vester, -tra, -trum: your</span></p><p><strong><span>i</span></strong><span>dem, eadem, idem (the same thing)的特殊变形</span>
+<span>单主 </span><strong><span>i</span></strong><span>dem, eadem, idem</span>
+<span>单宾 eundem, eandem, idem</span>
+<span>复属 e</span><strong><span>o</span></strong><span>rundem, e</span><strong><span>a</span></strong><span>rundem, e</span><strong><span>o</span></strong><span>rundem</span></p><p><span>第三人称的反身代词(无主，单复同)</span>
+<span>属 su</span><strong><span>i</span></strong><span>   与 sibi     宾 s</span><strong><span>e</span></strong><span>    夺 s</span><strong><span>e</span></strong>
+<span>属格形容词 suus, -a, -um</span></p><p><span>强势代词 ipse, -a, -um</span>
+<span>用作同位语表强调</span>
+<span>单属 ips</span><strong><span>i</span></strong><span>us, ips</span><strong><span>i</span></strong><span>us, ips</span><strong><span>i</span></strong><span>us   单与 ips</span><strong><span>i</span></strong><span>, ips</span><strong><span>i</span></strong><span>, ips</span><strong><span>i</span></strong>
+<span>其他同形容词变换</span></p><h3 id='关系代词'><span>关系代词</span></h3><p><span>在定语从句中指代先行词</span>
+<span>qu</span><strong><span>i</span></strong><span>, quae=who, that    quod=which, that</span>
+<span>关系代词的</span><strong><span>性</span></strong><span>和</span><strong><span>数</span></strong><span>由其先行词决定，</span><strong><span>格</span></strong><span>则由它在从句中的用法来决定</span></p><figure><table><thead><tr><th>&nbsp;</th><th>&nbsp;</th><th><span>sg.</span></th><th>&nbsp;</th><th>&nbsp;</th><th><span>pl.</span></th><th>&nbsp;</th></tr></thead><tbody><tr><td>&nbsp;</td><td><span>m</span></td><td><span>f</span></td><td><span>n</span></td><td><span>m</span></td><td><span>f</span></td><td><span>n</span></td></tr><tr><td><span>N</span></td><td><span>qu</span><strong><span>i</span></strong></td><td><span>quae</span></td><td><span>quod</span></td><td><span>qu</span><strong><span>i</span></strong></td><td><span>quae</span></td><td><span>quae</span></td></tr><tr><td><span>G</span></td><td><span>cuius</span></td><td><span>cuius</span></td><td><span>cuius</span></td><td><span>qu</span><strong><span>o</span></strong><span>rum</span></td><td><span>qu</span><strong><span>a</span></strong><span>rum</span></td><td><span>qu</span><strong><span>o</span></strong><span>rum</span></td></tr><tr><td><span>D</span></td><td><span>cui</span></td><td><span>cui</span></td><td><span>cui</span></td><td><span>quibus</span></td><td><span>quibus</span></td><td><span>quibus</span></td></tr><tr><td><span>Ac</span></td><td><span>quem</span></td><td><span>quam</span></td><td><span>quod</span></td><td><span>qu</span><strong><span>o</span></strong><span>s</span></td><td><span>qu</span><strong><span>a</span></strong><span>s</span></td><td><span>quae</span></td></tr><tr><td><span>Ab</span></td><td><span>qu</span><strong><span>o</span></strong></td><td><span>qu</span><strong><span>a</span></strong></td><td><span>qu</span><strong><span>o</span></strong></td><td><span>quibus</span></td><td><span>quibus</span></td><td><span>quibus</span></td></tr></tbody></table></figure><h3 id='疑问代词'><span>疑问代词</span></h3><p><span>quis=who, quid=what</span>
+<span>后可加具体名词 e.g: quem librum = what book</span></p><figure><table><thead><tr><th>&nbsp;</th><th>&nbsp;</th><th><span>sg.</span></th><th>&nbsp;</th><th><span>PL.</span></th><th>&nbsp;</th></tr></thead><tbody><tr><td>&nbsp;</td><td><span>m/f</span></td><td><span>n</span></td><td><span>m</span></td><td><span>f</span></td><td><span>n</span></td></tr><tr><td><span>N</span></td><td><em><span>quis</span></em></td><td><em><span>quid</span></em></td><td><span>qu</span><strong><span>i</span></strong></td><td><span>quae</span></td><td><span>quae</span></td></tr><tr><td><span>G</span></td><td><span>cuius</span></td><td><span>cuius</span></td><td><span>qu</span><strong><span>o</span></strong><span>rum</span></td><td><span>qu</span><strong><span>a</span></strong><span>rum</span></td><td><span>qu</span><strong><span>o</span></strong><span>rum</span></td></tr><tr><td><span>D</span></td><td><span>cui</span></td><td><span>cui</span></td><td><span>quibus</span></td><td><span>quibus</span></td><td><span>quibus</span></td></tr><tr><td><span>Ac</span></td><td><span>quem</span></td><td><em><span>quid</span></em></td><td><span>qu</span><strong><span>o</span></strong><span>s</span></td><td><span>qu</span><strong><span>a</span></strong><span>s</span></td><td><span>quae</span></td></tr><tr><td><span>Ab</span></td><td><span>qu</span><strong><span>o</span></strong></td><td><span>qu</span><strong><span>o</span></strong></td><td><span>quibus</span></td><td><span>quibus</span></td><td><span>quibus</span></td></tr></tbody></table></figure><h2 id='数词'><span>数词</span></h2><h3 id='基数词'><span>基数词</span></h3><p><span>会发生性、数、格变化的：</span></p><h4 id='一-unus'><span>一 UNUS</span></h4><figure><table><thead><tr><th>&nbsp;</th><th>&nbsp;</th><th><span>主</span></th><th><span>属</span></th><th><span>与</span></th><th><span>宾</span></th><th><span>夺</span></th></tr></thead><tbody><tr><td>&nbsp;</td><td><span>m</span></td><td><span>unus</span></td><td><span>unius</span></td><td><span>uni</span></td><td><span>unum</span></td><td><span>uno</span></td></tr><tr><td><span>单</span></td><td><span>f</span></td><td><span>una</span></td><td><span>unius</span></td><td><span>uni</span></td><td><span>unam</span></td><td><span>una</span></td></tr><tr><td>&nbsp;</td><td><span>n</span></td><td><span>unum</span></td><td><span>unius</span></td><td><span>uni</span></td><td><span>unum</span></td><td><span>una</span></td></tr></tbody></table></figure><h4 id='二-duo'><span>二 DUO</span></h4><figure><table><thead><tr><th>&nbsp;</th><th>&nbsp;</th><th><span>主</span></th><th><span>属</span></th><th><span>与</span></th><th><span>宾</span></th><th><span>夺</span></th></tr></thead><tbody><tr><td>&nbsp;</td><td><span>m</span></td><td><span>duo</span></td><td><span>duorum</span></td><td><span>duobus</span></td><td><span>duos</span></td><td><span>duobus</span></td></tr><tr><td><span>复</span></td><td><span>f</span></td><td><span>duae</span></td><td><span>duarum</span></td><td><span>duabus</span></td><td><span>duas</span></td><td><span>duabus</span></td></tr><tr><td>&nbsp;</td><td><span>n</span></td><td><span>duo</span></td><td><span>duorum</span></td><td><span>duobus</span></td><td><span>duo</span></td><td><span>duobus</span></td></tr></tbody></table></figure><h4 id='三-tres'><span>三 TRES</span></h4><figure><table><thead><tr><th>&nbsp;</th><th>&nbsp;</th><th><span>主</span></th><th><span>属</span></th><th><span>与</span></th><th><span>宾</span></th><th><span>夺</span></th></tr></thead><tbody><tr><td>&nbsp;</td><td><span>m/f</span></td><td><span>tres</span></td><td><span>trium</span></td><td><span>tribus</span></td><td><span>tres</span></td><td><span>tribus</span></td></tr><tr><td><span>复</span></td><td><span>n</span></td><td><span>tria</span></td><td><span>trium</span></td><td><span>tribus</span></td><td><span>tria</span></td><td><span>tribus</span></td></tr></tbody></table></figure><h4 id='千-mille'><span>千 MILLE</span></h4><p><span>注意：单数千（一千）是形容词；复数千 milia 是三-i干</span><strong><span>名词</span></strong><span>，后加名词要用属格</span></p><figure><table><thead><tr><th><span>数</span></th><th><span>性</span></th><th><span>主</span></th><th><span>属</span></th><th><span>与</span></th><th><span>宾</span></th><th><span>夺</span></th></tr></thead><tbody><tr><td><span>单</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td><span>mille</span></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>复</span></td><td><span>n</span></td><td><span>milia</span></td><td><span>milium</span></td><td><span>milibus</span></td><td><span>milia</span></td><td><span>milibus</span></td></tr></tbody></table></figure><p><img src="C:\Users\gooly\AppData\Roaming\Typora\typora-user-images\image-20220823153831950.png" referrerpolicy="no-referrer" alt="image-20220823153831950"></p><h2 id='状语'><span>状语</span></h2><h3 id='带介词夺格'><span>带介词夺格</span></h3><ol start='' ><li><p><span>cum 表伴随</span></p><blockquote><p><span>Cum amico id scripsit. </span><em><span>He wrote it with the friend.</span></em></p></blockquote></li><li><p><span>cum 表方式</span></p><blockquote><p><span>Cum cura id scripsit. </span><em><span>He wrote it with care.</span></em></p><p><span>Magna cum cura id scripsit. </span><em><span>He wrote it with great care.</span></em></p></blockquote></li><li><p><span>in, sub 表在何处</span></p><blockquote><p><span>In urbe id scripsit. </span><em><span>He wrote it in the city.</span></em></p></blockquote></li><li><p><span>ab(a), de, ex(e) 表从何处</span></p><blockquote><p><span>Ex urbe id misit. </span><em><span>He sent it from a city.</span></em></p></blockquote></li><li><p><span>ab(a), de, ex(e) 表分离</span></p><blockquote><p><span>Ab urbe eos prohibuit. </span><em><span>He kept them (away) from the city.</span></em></p></blockquote></li><li><p><span>ab 表施事</span></p><blockquote><p><span>Ab amico id scriptum est. </span><em><span>It was written by a friend.</span></em></p></blockquote></li><li><p><span>ex(e), de 放基数词后表整体</span></p><blockquote><p><span>Tres ex navibus discesserunt. </span><em><span>Three of the ships departed.</span></em></p></blockquote></li></ol><h3 id='无介词夺格'><span>无介词夺格</span></h3><ol start='' ><li><p><span>手段</span></p><blockquote><p><span>Sua manu id scripsit. </span><em><span>He wrote it with his own hand.</span></em></p></blockquote></li><li><p><span>方式（若方式名词有形容词修饰）</span></p><blockquote><p><span>Magna cura id scripsit. </span><em><span>He wrote it with great care.</span></em></p></blockquote></li><li><p><span>时间</span></p><blockquote><p><span>Eo tempore id scripsit. </span><em><span>He wrote it at that time.</span></em></p><p><span>Una hora id scripsit. </span><em><span>He wrote it in an hour.</span></em></p></blockquote></li><li><p><span>分离</span></p><blockquote><p><span>Metu eos liberavit. </span><em><span>He freed them from fear.</span></em></p></blockquote></li></ol><h2 id='词汇表'><span>词汇表</span></h2><h3 id='动词-2'><span>动词</span></h3><figure><table><thead><tr><th><span>直陈现在主动</span></th><th><span>不定式</span></th><th><span>完成时直陈式</span></th><th><span>完成时被动</span></th><th><span>意义</span></th></tr></thead><tbody><tr><td><span>alo</span></td><td><span>alere</span></td><td><span>alui</span></td><td><span>altum</span></td><td><span>to support, sustain</span></td></tr><tr><td><span>ago</span></td><td><span>agere</span></td><td><span>egi</span></td><td><span>actum</span></td><td><span>to drive, lead do ct; pass, spend (Iife or time)</span></td></tr><tr><td><span>amitto</span></td><td><span>amittere</span></td><td><span>amisi</span></td><td><span>amissum</span></td><td><span>to lose, let go</span></td></tr><tr><td><span>amo</span></td><td><span>amare</span></td><td><span>amavi</span></td><td><span>amatum</span></td><td><span>to love, like</span></td></tr><tr><td><span>audio</span></td><td><span>audire</span></td><td><span>audivi</span></td><td><span>auditum</span></td><td><span>to hear, listen</span></td></tr><tr><td><span>cado</span></td><td><span>cadere</span></td><td><span>cecidi</span></td><td><span>casurum</span></td><td><span>to fall</span></td></tr><tr><td><span>capio</span></td><td><span>capere</span></td><td><span>cepi</span></td><td><span>captum</span></td><td><span>to take, capture, seize, get</span></td></tr><tr><td><span>careo</span></td><td><span>carere</span></td><td><span>carui</span></td><td><span>cariturum</span></td><td><span>to be without, lack; want; be free from</span></td></tr><tr><td><span>conservo</span></td><td><span>conservare</span></td><td><span>conservavi</span></td><td><span>conservatum</span></td><td><span>to preserve, maintain</span></td></tr><tr><td><span>cogito</span></td><td><span>cogitare</span></td><td><span>cogitavi</span></td><td><span>cogitatum</span></td><td><span>to think, consider, plan</span></td></tr><tr><td><span>creo</span></td><td><span>creare</span></td><td><span>(1)</span></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>culpo</span></td><td><span>(1)</span></td><td>&nbsp;</td><td>&nbsp;</td><td><span>to blame</span></td></tr><tr><td><span>cupio</span></td><td><span>cupere</span></td><td><span>cupivi</span></td><td><span>cupitum</span></td><td><span>to desire, want, hope</span></td></tr><tr><td><span>debeo</span></td><td><span>debere</span></td><td><span>debui</span></td><td><span>debitum</span></td><td><span>must, ought</span></td></tr><tr><td><span>demonstro</span></td><td><span>(1)</span></td><td>&nbsp;</td><td>&nbsp;</td><td><span>to demonstrate</span></td></tr><tr><td><span>dico</span></td><td><span>dicere</span></td><td><span>dixi</span></td><td><span>dictum</span></td><td><span>to say, tell, speak; name, call</span></td></tr><tr><td><span>discedo</span></td><td><span>discedere</span></td><td><span>discessi</span></td><td><span>discessum</span></td><td><span>to go away, depart</span></td></tr><tr><td><span>disco</span></td><td><span>discere</span></td><td><span>didici</span></td><td>&nbsp;</td><td><span>to learn</span></td></tr><tr><td><span>do</span></td><td><span>dare</span></td><td><span>dedi</span></td><td><span>datum</span></td><td><span>to give, offer</span></td></tr><tr><td><span>doceo</span></td><td><span>docere</span></td><td><span>docui</span></td><td><span>doctum</span></td><td><span>to teach</span></td></tr><tr><td><span>erro</span></td><td><span>errare</span></td><td><span>erravi</span></td><td><span>erratum</span></td><td><span>to wander; to make mistake</span></td></tr><tr><td><span>exspecto</span></td><td><span>(1)</span></td><td>&nbsp;</td><td>&nbsp;</td><td><span>to look for, expect, await</span></td></tr><tr><td><span>facio</span></td><td><span>facere</span></td><td><span>feci</span></td><td><span>factum</span></td><td><span>to make, do, accomplish</span></td></tr><tr><td><span>fugio</span></td><td><span>fugere</span></td><td><span>fugi</span></td><td><span>fugiturum</span></td><td><span>to flee, escape; avoid, shun</span></td></tr><tr><td><span>fluo</span></td><td><span>fluere</span></td><td><span>fluxi</span></td><td><span>fluxum</span></td><td><span>to flow</span></td></tr><tr><td><span>gero</span></td><td><span>gerere</span></td><td><span>gessi</span></td><td><span>gestum</span></td><td><span>to carry; carry on, manage; conduct, accomplish, perform</span></td></tr><tr><td><span>habeo</span></td><td><span>habere</span></td><td><span>habui</span></td><td><span>habitum</span></td><td><span>to have, hold; consider</span></td></tr><tr><td><span>incipio</span></td><td><span>incipere</span></td><td><span>incepi</span></td><td><span>inceptum</span></td><td><span>to begin</span></td></tr><tr><td><span>intellego</span></td><td><span>intellegere</span></td><td><span>intellexi</span></td><td><span>intellectum</span></td><td><span>to understand</span></td></tr><tr><td><span>invenio</span></td><td><span>invenire</span></td><td><span>inveni</span></td><td><span>inventum</span></td><td><span>to find</span></td></tr><tr><td><span>iungo</span></td><td><span>iungere</span></td><td><span>iunxi</span></td><td><span>iunctum</span></td><td><span>to join</span></td></tr><tr><td><span>iuvo</span></td><td><span>iuvare</span></td><td><span>iuvi</span></td><td><span>iutum</span></td><td><span>to help, assist, aid</span></td></tr><tr><td><span>lego</span></td><td><span>legere</span></td><td><span>legi</span></td><td><span>lectum</span></td><td><span>to pick out, choose; read</span></td></tr><tr><td><span>libero</span></td><td><span>(1)</span></td><td>&nbsp;</td><td>&nbsp;</td><td><span>to free, liberate</span></td></tr><tr><td><span>maneo</span></td><td><span>manere</span></td><td><span>mansi</span></td><td><span>mansum</span></td><td><span>to remain, stay</span></td></tr><tr><td><span>misceo</span></td><td><span>miscere</span></td><td><span>miscui</span></td><td><span>mixtum</span></td><td><span>to mix</span></td></tr><tr><td><span>mitto</span></td><td><span>mittere</span></td><td><span>misi</span></td><td><span>missum</span></td><td><span>to send</span></td></tr><tr><td><span>moveo</span></td><td><span>movere</span></td><td><span>movi</span></td><td><span>motum</span></td><td><span>to move; arouse, affect</span></td></tr><tr><td><span>moneo</span></td><td><span>monere</span></td><td><span>monui</span></td><td><span>monitum</span></td><td><span>to advise, remind, warm</span></td></tr><tr><td><span>paro</span></td><td><span>(1)</span></td><td>&nbsp;</td><td>&nbsp;</td><td><span>to prepare, provide; get, obtain</span></td></tr><tr><td><span>pronuntio</span></td><td><span>pronuntiare</span></td><td><span>(1)</span></td><td>&nbsp;</td><td><span>to proclaim, announce; declaim; pronounce</span></td></tr><tr><td><span>rego</span></td><td><span>regere</span></td><td><span>rexi</span></td><td><span>rectum</span></td><td><span>to rule, guide, direct</span></td></tr><tr><td><span>remaneo</span></td><td><span>remanere</span></td><td><span>remansi</span></td><td><span>remansum</span></td><td><span>to remain, stay</span></td></tr><tr><td><span>scribo</span></td><td><span>scribere</span></td><td><span>scripsi</span></td><td><span>scriptum</span></td><td><span>to write, compose</span></td></tr><tr><td><span>sentio</span></td><td><span>sentire</span></td><td><span>sensi</span></td><td><span>sensum</span></td><td><span>to feel, experience, think</span></td></tr><tr><td><span>servo</span></td><td><span>servare</span></td><td><span>servavi</span></td><td><span>servatum</span></td><td><span>to save, keep, preserve</span></td></tr><tr><td><span>sto</span></td><td><span>stare</span></td><td><span>stedi</span></td><td><span>statum</span></td><td><span>to stand</span></td></tr><tr><td><span>supero</span></td><td><span>(1)</span></td><td>&nbsp;</td><td>&nbsp;</td><td><span>to be above</span></td></tr><tr><td><span>traho</span></td><td><span>trahere</span></td><td><span>traxi</span></td><td><span>tractum</span></td><td><span>to drag; derive, acquire</span></td></tr><tr><td><span>venio</span></td><td><span>venire</span></td><td><span>veni</span></td><td><span>ventum</span></td><td><span>to come</span></td></tr><tr><td><span>video</span></td><td><span>videre</span></td><td><span>vidi</span></td><td><span>visum</span></td><td><span>to see, observe</span></td></tr><tr><td><span>vinco</span></td><td><span>vincere</span></td><td><span>vici</span></td><td><span>victum</span></td><td><span>to conquer, overcome</span></td></tr><tr><td><span>vivo</span></td><td><span>vivere</span></td><td><span>vixi</span></td><td><span>v</span><strong><span>i</span></strong><span>ctum</span></td><td><span>to live</span></td></tr><tr><td><span>voco</span></td><td><span>vocare</span></td><td><span>vocavi</span></td><td><span>vocatum</span></td><td><span>to call</span></td></tr></tbody></table></figure><h3 id='名词'><span>名词</span></h3><figure><table><thead><tr><th><span>词</span></th><th><span>性</span></th><th><span>义</span></th></tr></thead><tbody><tr><td><span>adulescens(adulescentis)</span></td><td><span>f/m</span></td><td><span>adolescent, young man and woman</span></td></tr><tr><td><span>amica</span></td><td><span>f</span></td><td><span>friend</span></td></tr><tr><td><span>amicitia</span></td><td><span>f</span></td><td><span>friendship</span></td></tr><tr><td><span>amor(amoris)</span></td><td><span>m3</span></td><td><span>love</span></td></tr><tr><td><span>animal(animalis)</span></td><td><span>n3</span></td><td><span>animal</span></td></tr><tr><td><span>annus</span></td><td><span>m</span></td><td><span>year</span></td></tr><tr><td><span>aqua</span></td><td><span>f</span></td><td><span>water</span></td></tr><tr><td><span>argumentum</span></td><td><span>n</span></td><td><span>proof, evidence, argument</span></td></tr><tr><td><span>ars(artis)</span></td><td><span>f3</span></td><td><span>art, skill</span></td></tr><tr><td><span>Asia</span></td><td><span>f</span></td><td><span>Asia</span></td></tr><tr><td><span>beneficium</span></td><td><span>n</span></td><td><span>benefit, kindness; favor</span></td></tr><tr><td><span>caput(capitis)</span></td><td><span>n3</span></td><td><span>head, leader, beginning, chapter</span></td></tr><tr><td><span>consilum</span></td><td><span>n</span></td><td><span>plan, purpose, advice, judgment, wisdom</span></td></tr><tr><td><span>copia</span></td><td><span>f</span></td><td><span>abundance, supply</span></td></tr><tr><td><span>corpus(corporis)</span></td><td><span>n3</span></td><td><span>body</span></td></tr><tr><td><span>culpa</span></td><td><span>f</span></td><td><span>fault, blame</span></td></tr><tr><td><span>cupiditas(cupiditatis)</span></td><td><span>f3</span></td><td><span>desire, longing, passion</span></td></tr><tr><td><span>cura</span></td><td><span>f</span></td><td><span>care, attention, caution</span></td></tr><tr><td><span>discipula/-us</span></td><td><span>f/m</span></td><td><span>leaner, student</span></td></tr><tr><td><span>donum</span></td><td><span>n</span></td><td><span>gift</span></td></tr><tr><td><span>factum</span></td><td><span>n</span></td><td><span>deed, act, achievement</span></td></tr><tr><td><span>forma</span></td><td><span>f</span></td><td><span>form, shape</span></td></tr><tr><td><span>genus(generis)</span></td><td><span>n3</span></td><td><span>origin; kind, type, sort, class</span></td></tr><tr><td><span>homo(hominis)</span></td><td><span>m3</span></td><td><span>man</span></td></tr><tr><td><span>hora</span></td><td><span>f</span></td><td><span>hour, time</span></td></tr><tr><td><span>iudicium</span></td><td><span>n</span></td><td><span>judgement, decision, opinion; trial</span></td></tr><tr><td><span>labor(laboris)</span></td><td><span>m3</span></td><td><span>labor, work; a work, production</span></td></tr><tr><td><span>liber(libr</span><strong><span>i</span></strong><span>)</span></td><td><span>m</span></td><td><span>book</span></td></tr><tr><td><span>l</span><strong><span>i</span></strong><span>bertas(l</span><strong><span>i</span></strong><span>bertatis)</span></td><td><span>f3</span></td><td><span>liberty</span></td></tr><tr><td><span>locus</span></td><td><span>m</span></td><td><span>place, region</span><br><span>(pl) loca (n) passage</span></td></tr><tr><td><span>ludus</span></td><td><span>m</span></td><td><span>game, sport; school</span></td></tr><tr><td><span>mater(matris)</span></td><td><span>f3</span></td><td><span>mother</span></td></tr><tr><td><span>medicus/-a</span></td><td><span>m/f</span></td><td><span>doctor/physician</span></td></tr><tr><td><span>memoria</span></td><td><span>f</span></td><td><span>memory, recollection</span></td></tr><tr><td><span>mens(mentis)</span></td><td><span>f3</span></td><td><span>mind, thought</span></td></tr><tr><td><span>nemo(neminis)</span></td><td><span>mf3</span></td><td><span>nobody</span></td></tr><tr><td><span>nomen(nominis)</span></td><td><span>n3</span></td><td><span>name</span></td></tr><tr><td><span>numerus</span></td><td><span>m</span></td><td><span>number</span></td></tr><tr><td><span>pater(patris)</span></td><td><span>m3</span></td><td><span>father</span></td></tr><tr><td><span>pecunia</span></td><td><span>f</span></td><td><span>money</span></td></tr><tr><td><span>porta</span></td><td><span>f</span></td><td><span>gate, entrance</span></td></tr><tr><td><span>principium</span></td><td><span>n</span></td><td><span>beginning</span></td></tr><tr><td><span>puella</span></td><td><span>f</span></td><td><span>girl</span></td></tr><tr><td><span>puer</span></td><td><span>m</span></td><td><span>boy</span></td></tr><tr><td><span>ratio(rationis)</span></td><td><span>f3</span></td><td><span>account; reason, judgment, consideration,  system; manner, method</span></td></tr><tr><td><span>sapientia</span></td><td><span>f</span></td><td><span>wisdom</span></td></tr><tr><td><span>scientia</span></td><td><span>f</span></td><td><span>knowledge</span></td></tr><tr><td><span>scriptor(scriptoris)</span></td><td><span>m3</span></td><td><span>writer, author</span></td></tr><tr><td><span>sensus</span></td><td><span>m4</span></td><td><span>feeling, sense</span></td></tr><tr><td><span>sententia</span></td><td><span>f</span></td><td><span>feeling, thought, opinion, sentence</span></td></tr><tr><td><span>signum</span></td><td><span>n</span></td><td><span>sign, signal, indication</span></td></tr><tr><td><span>stultus</span></td><td><span>m</span></td><td><span>fool</span></td></tr><tr><td><span>terra</span></td><td><span>f</span></td><td><span>earth, land, ground, country</span></td></tr><tr><td><span>tempestas(tempestatis)</span></td><td><span>n3</span></td><td><span>a period of time, season; weather</span></td></tr><tr><td><span>tempus(temporis)</span></td><td><span>n3</span></td><td><span>time; occasion, opportunity</span></td></tr><tr><td><span>verbium</span></td><td><span>n</span></td><td><span>word</span></td></tr><tr><td><span>veritas(veritatis)</span></td><td><span>f3</span></td><td><span>truth</span></td></tr><tr><td><span>via</span></td><td><span>f</span></td><td><span>way, road, street</span></td></tr><tr><td><span>vir (viri)</span></td><td><span>m</span></td><td><span>man</span></td></tr><tr><td><span>vita</span></td><td><span>f</span></td><td><span>life</span></td></tr><tr><td><span>vitium</span></td><td><span>n</span></td><td><span>fault, crime</span></td></tr></tbody></table></figure><p>&nbsp;</p><h3 id='形容词'><span>形容词</span></h3><figure><table><thead><tr><th><span>词</span></th><th><span>义</span></th></tr></thead><tbody><tr><td><span>amicus</span></td><td><span>friendly</span></td></tr><tr><td><span>antiqua</span></td><td><span>ancient</span></td></tr><tr><td><span>bella</span></td><td><span>beautiful</span></td></tr><tr><td><span>bona</span></td><td><span>good</span></td></tr><tr><td><span>brevis, breve</span></td><td><span>short, small, brief</span></td></tr><tr><td><span>carus</span></td><td><span>dear</span></td></tr><tr><td><span>celer, celeris, celere</span></td><td><span>swift, rapid, quick</span></td></tr><tr><td><span>certus</span></td><td><span>definite, sure, certain, reliable</span></td></tr><tr><td><span>communis, commune</span></td><td><span>common, general, of/ for the community</span></td></tr><tr><td><span>dexter(dextra, dextrum)</span></td><td><span>right, right-hand</span></td></tr><tr><td><span>difficilis, difficile</span></td><td><span>difficult, hard</span></td></tr><tr><td><span>facilis, facile</span></td><td><span>easy</span></td></tr><tr><td><span>gravie, grave</span></td><td><span>heavy, weighty; serious, important; severe, gievous</span></td></tr><tr><td><span>humanus</span></td><td><span>(pertaining to human)</span></td></tr><tr><td><span>levis, leve</span></td><td><span>light; easy; slight; trival</span></td></tr><tr><td><span>liber</span></td><td><span>free</span></td></tr><tr><td><span>longus</span></td><td><span>long</span></td></tr><tr><td><span>magna</span></td><td><span>large; important</span></td></tr><tr><td><span>malus</span></td><td><span>bad</span></td></tr><tr><td><span>multa</span></td><td><span>many, much</span></td></tr><tr><td><span>noster(nostra,nostrum)</span></td><td><span>our</span></td></tr><tr><td><span>novus</span></td><td><span>new, strange</span></td></tr><tr><td><span>omnis, omne</span></td><td><span>every, all</span></td></tr><tr><td><span>parvus</span></td><td><span>little, small</span></td></tr><tr><td><span>pauca</span></td><td><span>few</span></td></tr><tr><td><span>perpetuus</span></td><td><span>perpetual, lasting</span></td></tr><tr><td><span>plenus</span></td><td><span>full, abundant,</span></td></tr><tr><td><span>pulcher</span></td><td><span>beautiful, handsom, fine</span></td></tr><tr><td><span>sanus</span></td><td><span>sound, healthy, sane</span></td></tr><tr><td><span>secundus</span></td><td><span>second</span></td></tr><tr><td><span>sinister(sinistra, sinistrum)</span></td><td><span>left, left-hand</span></td></tr><tr><td><span>stultus</span></td><td><span>stupid</span></td></tr><tr><td><span>verus</span></td><td><span>real, true, proper</span></td></tr><tr><td><span>vester(vestra, vestrum)</span></td><td><span>your (pl.)</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p><h3 id='代词-2'><span>代词</span></h3><figure><table><thead><tr><th><span>词</span></th><th><span>义</span></th></tr></thead><tbody><tr><td><span>hic</span></td><td><span>this</span></td></tr><tr><td><span>ille</span></td><td><span>that</span></td></tr><tr><td><span>nihil</span></td><td><span>nothing</span></td></tr><tr><td><span>quid</span></td><td><span>what</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure><h3 id='副词'><span>副词</span></h3><figure><table><thead><tr><th><span>词</span></th><th><span>义</span></th></tr></thead><tbody><tr><td><span>ante</span></td><td><span>before, previously</span></td></tr><tr><td><span>bene</span></td><td><span>well</span></td></tr><tr><td><span>cito</span></td><td><span>quickly</span></td></tr><tr><td><span>cras</span></td><td><span>tomorrow</span></td></tr><tr><td><span>cur</span></td><td><span>why</span></td></tr><tr><td><span>deinde</span></td><td><span>then, next</span></td></tr><tr><td><span>diu</span></td><td><span>for a long time</span></td></tr><tr><td><span>heri</span></td><td><span>yesterday</span></td></tr><tr><td><span>hodie</span></td><td><span>today</span></td></tr><tr><td><span>iam</span></td><td><span>now, already, soon</span></td></tr><tr><td><span>ibi</span></td><td><span>there</span></td></tr><tr><td><span>itaque</span></td><td><span>and so, therefore</span></td></tr><tr><td><span>nimis/nimium</span></td><td><span>too, too much</span></td></tr><tr><td><span>non</span></td><td><span>not</span></td></tr><tr><td><span>numquam</span></td><td><span>never</span></td></tr><tr><td><span>nunc</span></td><td><span>now, at present</span></td></tr><tr><td><span>nuper</span></td><td><span>recently</span></td></tr><tr><td><span>olim</span></td><td><span>at that time, once; in the future</span></td></tr><tr><td><span>quam</span></td><td><span>how</span></td></tr><tr><td><span>quando</span></td><td><span>when</span></td></tr><tr><td><span>quoque</span></td><td><span>too</span></td></tr><tr><td><span>saepe</span></td><td><span>often</span></td></tr><tr><td><span>semper</span></td><td><span>always</span></td></tr><tr><td><span>tamen</span></td><td><span>nevertheless, still</span></td></tr><tr><td><span>tum</span></td><td><span>at that time; in the next place</span></td></tr><tr><td><span>ubi</span></td><td><span>where</span></td></tr></tbody></table></figure><h3 id='介词'><span>介词</span></h3><figure><table><thead><tr><th><span>词</span></th><th><span>义</span></th></tr></thead><tbody><tr><td><span>ab/</span><strong><span>a</span></strong></td><td><span>by, from</span></td></tr><tr><td><span>ad</span></td><td><span>to, at,</span></td></tr><tr><td><span>ante</span></td><td><span>before, in front of</span></td></tr><tr><td><span>contra</span></td><td><span>against</span></td></tr><tr><td><span>cum</span></td><td><span>with</span></td></tr><tr><td><span>de</span></td><td><span>from, about</span></td></tr><tr><td><span>ex/</span><strong><span>e</span></strong></td><td><span>from</span></td></tr><tr><td><span>in</span></td><td><span>in, on, into, toward, against</span></td></tr><tr><td><span>inter</span></td><td><span>between, among</span></td></tr><tr><td><span>per</span></td><td><span>through, by</span></td></tr><tr><td><span>post</span></td><td><span>after, behind</span></td></tr><tr><td><span>pro</span></td><td><span>in front of; before; on behalf of; for the sake of; in return for; instead of; for; as</span></td></tr><tr><td><span>sine</span></td><td><span>without</span></td></tr><tr><td><span>sub</span></td><td><span>under,</span></td></tr></tbody></table></figure><h3 id='连词'><span>连词</span></h3><figure><table><thead><tr><th><span>词</span></th><th><span>义</span></th></tr></thead><tbody><tr><td><span>at</span></td><td><span>but; but mind you; but you say</span></td></tr><tr><td><span>aut</span></td><td><span>or (</span><span>~</span><span>...</span><span>~</span><span>...=either...or)</span></td></tr><tr><td><span>autem</span></td><td><span>however</span></td></tr><tr><td><span>dum</span></td><td><span>while, at the same time; until</span></td></tr><tr><td><span>et</span></td><td><span>and</span></td></tr><tr><td><span>ergo</span></td><td><span>so</span></td></tr><tr><td><span>igitur</span></td><td><span>so (post.)</span></td></tr><tr><td><span>nam</span></td><td><span>for</span></td></tr><tr><td><span>neque/nec</span></td><td><span>neither, nor (~... ~... =neither...nor...)</span></td></tr><tr><td><span>nisi</span></td><td><span>unless; except</span></td></tr><tr><td><span>propter</span></td><td><span>because of</span></td></tr><tr><td><span>quoniam</span></td><td><span>since, because</span></td></tr><tr><td><span>quod</span></td><td><span>because</span></td></tr><tr><td><span>sed</span></td><td><span>but</span></td></tr><tr><td><span>si</span></td><td><span>if</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p><h2 id='特例'><span>特例</span></h2><h3 id='sum-to-be'><span>SUM (to be)</span></h3><p><span>不定式 esse</span></p><p><span>直陈式现在时</span>
+<span>单数 sum (I am); es (U are); est (s/he/it is; there is)</span>
+<span>复数 sumus (we are); estis (U are); sunt (they are, there are)</span></p><p><span>直陈式将来时</span>
+<span>单数 er</span><strong><span>o</span></strong><span> (I shall be); eris (you will be); erit (s/he/it will be)</span>
+<span>复数 erimus (we will be); eritis (you will be ); erunt (they will be)</span></p><p><span>直陈式未完成时</span>
+<span>单数 eram (I was ...); er</span><strong><span>a</span></strong><span>s (you were ...); erat (s/he/it was)</span>
+<span>复数 er</span><strong><span>a</span></strong><span>mus (we will be); er</span><strong><span>a</span></strong><span>tis (you will be ); erant (they will be)</span></p><p><span>完成时系统：词根 fu</span><strong><span>i</span></strong><span> 变形完全规则</span></p><h3 id='possum-be-able-to-can'><span>POSSUM (be able to/ can)</span></h3><p><span>不定式 posse</span></p><figure><table><thead><tr><th>&nbsp;</th><th><span>现在时直陈式</span></th><th><span>将来时直陈式</span></th><th><span>未完成时直陈式</span></th></tr></thead><tbody><tr><td><span>单一</span></td><td><span>possum</span></td><td><span>poter</span><strong><span>o</span></strong></td><td><span>poteram</span></td></tr><tr><td><span>单二</span></td><td><span>potes</span></td><td><span>poteris</span></td><td><span>poter</span><strong><span>a</span></strong><span>s</span></td></tr><tr><td><span>单三</span></td><td><span>potest</span></td><td><span>poterit</span></td><td><span>poterat</span></td></tr><tr><td><span>复一</span></td><td><span>possumus</span></td><td><span>poterimus</span></td><td><span>poter</span><strong><span>a</span></strong><span>mus</span></td></tr><tr><td><span>复二</span></td><td><span>potestis</span></td><td><span>poteritis</span></td><td><span>poter</span><strong><span>a</span></strong><span>tis</span></td></tr><tr><td><span>复三</span></td><td><span>possunt</span></td><td><span>poterunt</span></td><td><span>poterant</span></td></tr></tbody></table></figure><h3 id='ille--hoc-that--this'><span>ILLE / HOC (that / this)</span></h3><figure><table><thead><tr><th>&nbsp;</th><th><span>ille</span></th><th>&nbsp;</th><th>&nbsp;</th><th><span>HOC</span></th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody><tr><td>&nbsp;</td><td><span>m</span></td><td><span>f</span></td><td><span>n</span></td><td><span>m</span></td><td><span>f</span></td><td><span>n</span></td></tr><tr><td><span>单主</span></td><td><span>ille</span></td><td><span>illa</span></td><td><span>illud</span></td><td><span>hic</span></td><td><span>haec</span></td><td><span>hoc</span></td></tr><tr><td><span>单属</span></td><td><span>ill</span><strong><span>i</span></strong><span>us</span></td><td><span>ill</span><strong><span>i</span></strong><span>us</span></td><td><span>ill</span><strong><span>i</span></strong><span>us</span></td><td><span>huius</span></td><td><span>huius</span></td><td><span>huius</span></td></tr><tr><td><span>单与</span></td><td><span>ill</span><strong><span>i</span></strong></td><td><span>ill</span><strong><span>i</span></strong></td><td><span>ill</span><strong><span>i</span></strong></td><td><span>huic</span></td><td><span>huic</span></td><td><span>huic</span></td></tr><tr><td><span>单宾</span></td><td><span>illum</span></td><td><span>illam</span></td><td><span>illud</span></td><td><span>hunc</span></td><td><span>hanc</span></td><td><span>hoc</span></td></tr><tr><td><span>单夺</span></td><td><span>ill</span><strong><span>o</span></strong></td><td><span>ill</span><strong><span>a</span></strong></td><td><span>ill</span><strong><span>o</span></strong></td><td><span>h</span><strong><span>o</span></strong><span>c</span></td><td><span>h</span><strong><span>a</span></strong><span>c</span></td><td><span>h</span><strong><span>o</span></strong><span>c</span></td></tr><tr><td><span>复主</span></td><td><span>ill</span><strong><span>i</span></strong></td><td><span>illae</span></td><td><span>illa</span></td><td><span>h</span><strong><span>i</span></strong></td><td><span>hae</span></td><td><span>haec</span></td></tr><tr><td><span>复属</span></td><td><span>ill</span><strong><span>o</span></strong><span>rum</span></td><td><span>ill</span><strong><span>a</span></strong><span>rum</span></td><td><span>ill</span><strong><span>o</span></strong><span>rum</span></td><td><span>h</span><strong><span>o</span></strong><span>rum</span></td><td><span>h</span><strong><span>a</span></strong><span>rum</span></td><td><span>h</span><strong><span>o</span></strong><span>rum</span></td></tr><tr><td><span>复与</span></td><td><span>ill</span><strong><span>i</span></strong><span>s</span></td><td><span>ill</span><strong><span>i</span></strong><span>s</span></td><td><span>ill</span><strong><span>i</span></strong><span>s</span></td><td><span>h</span><strong><span>i</span></strong><span>s</span></td><td><span>h</span><strong><span>i</span></strong><span>s</span></td><td><span>h</span><strong><span>i</span></strong><span>s</span></td></tr><tr><td><span>复宾</span></td><td><span>ill</span><strong><span>o</span></strong><span>s</span></td><td><span>ill</span><strong><span>a</span></strong><span>s</span></td><td><span>illa</span></td><td><span>h</span><strong><span>o</span></strong><span>s</span></td><td><span>h</span><strong><span>a</span></strong><span>s</span></td><td><span>haec</span></td></tr><tr><td><span>复夺</span></td><td><span>ill</span><strong><span>i</span></strong><span>s</span></td><td><span>ill</span><strong><span>i</span></strong><span>s</span></td><td><span>ill</span><strong><span>i</span></strong><span>s</span></td><td><span>h</span><strong><span>i</span></strong><span>s</span></td><td><span>h</span><strong><span>i</span></strong><span>s</span></td><td><span>h</span><strong><span>i</span></strong><span>s</span></td></tr></tbody></table></figure><p><span>ISTE (that of yours) 同 ILLE 变格法相同。</span></p><h3 id='unus-nauta'><span>UNUS NAUTA</span></h3><p><span>这些形容词的变格相似。</span></p><figure><table><thead><tr><th><span>词</span></th><th><span>义</span></th></tr></thead><tbody><tr><td><span>unus, -a, -um</span></td><td><span>one</span></td></tr><tr><td><span>nullus, -a, -um</span></td><td><span>no, none</span></td></tr><tr><td><span>ullus, -a, -um</span></td><td><span>any</span></td></tr><tr><td><span>solus, -a, -um</span></td><td><span>alone, only</span></td></tr><tr><td><span>neuter, -tra, -trum</span></td><td><span>neither</span></td></tr><tr><td><span>alius, -a, -ud</span></td><td><span>another, other</span></td></tr><tr><td><span>uter, -tra, -trum</span></td><td><span>either, which (of two)</span></td></tr><tr><td><span>totus, -a, -um</span></td><td><span>whole, entire</span></td></tr><tr><td><span>alter, -ra, -rum</span></td><td><span>the other (of two)</span></td></tr></tbody></table></figure><figure><table><thead><tr><th>&nbsp;</th><th>&nbsp;</th><th><span>solus</span></th><th>&nbsp;</th><th>&nbsp;</th><th><span>alius</span></th><th>&nbsp;</th></tr></thead><tbody><tr><td><span>单主</span></td><td><span>s</span><strong><span>o</span></strong><span>lus</span></td><td><span>sola</span></td><td><span>solum</span></td><td><span>alius</span></td><td><span>alia</span></td><td><span>aliud</span></td></tr><tr><td><span>单属</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>i</span></strong><span>us</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>i</span></strong><span>us</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>i</span></strong><span>us</span></td><td><span>al</span><strong><span>i</span></strong><span>us(alter</span><strong><span>i</span></strong><span>us)</span></td><td><span>al</span><strong><span>i</span></strong><span>us(alter</span><strong><span>i</span></strong><span>us)</span></td><td><span>al</span><strong><span>i</span></strong><span>us(alter</span><strong><span>i</span></strong><span>us)</span></td></tr><tr><td><span>单与</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>i</span></strong></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>i</span></strong></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>i</span></strong></td><td><span>ali</span><strong><span>i</span></strong></td><td><span>ali</span><strong><span>i</span></strong></td><td><span>ali</span><strong><span>i</span></strong></td></tr><tr><td><span>单宾</span></td><td><span>s</span><strong><span>o</span></strong><span>lum</span></td><td><span>s</span><strong><span>o</span></strong><span>lam</span></td><td><span>s</span><strong><span>o</span></strong><span>lum</span></td><td><span>alium</span></td><td><span>aliam</span></td><td><span>aliud</span></td></tr><tr><td><span>单夺</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>o</span></strong></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>a</span></strong></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>o</span></strong></td><td><span>ali</span><strong><span>o</span></strong></td><td><span>ali</span><strong><span>a</span></strong></td><td><span>ali</span><strong><span>o</span></strong></td></tr><tr><td><span>复主</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>i</span></strong></td><td><span>s</span><strong><span>o</span></strong><span>lae</span></td><td><span>s</span><strong><span>o</span></strong><span>la</span></td><td><span>ali</span><strong><span>i</span></strong></td><td><span>aliae</span></td><td><span>alia</span></td></tr><tr><td><span>复属</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>o</span></strong><span>rum</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>a</span></strong><span>rum</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>o</span></strong><span>rum</span></td><td><span>al</span><strong><span>o</span></strong><span>rum</span></td><td><span>al</span><strong><span>a</span></strong><span>rum</span></td><td><span>al</span><strong><span>o</span></strong><span>rum</span></td></tr><tr><td><span>复与</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>i</span></strong><span>s</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>i</span></strong><span>s</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>i</span></strong><span>s</span></td><td><span>al</span><strong><span>i</span></strong><span>s</span></td><td><span>al</span><strong><span>i</span></strong><span>s</span></td><td><span>al</span><strong><span>i</span></strong><span>s</span></td></tr><tr><td><span>复宾</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>o</span></strong><span>s</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>a</span></strong><span>s</span></td><td><span>s</span><strong><span>o</span></strong><span>la</span></td><td><span>al</span><strong><span>o</span></strong><span>s</span></td><td><span>al</span><strong><span>a</span></strong><span>s</span></td><td><span>ala</span></td></tr><tr><td><span>复夺</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>i</span></strong><span>s</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>i</span></strong><span>s</span></td><td><span>s</span><strong><span>o</span></strong><span>l</span><strong><span>i</span></strong><span>s</span></td><td><span>al</span><strong><span>i</span></strong><span>s</span></td><td><span>al</span><strong><span>i</span></strong><span>s</span></td><td><span>al</span><strong><span>i</span></strong><span>s</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div></div>
 </body>
 </html>
