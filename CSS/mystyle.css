@@ -1,10 +1,10 @@
 .backgroundimg
 {
-  background: url("/images/background2.png") no-repeat left fixed; 
+  background: url("/images/background2.png") no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: 100%;
   border: 0px solid green;
   padding: 8px;
   margin: -8px;
