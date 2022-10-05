@@ -1,9 +1,10 @@
 .backgroundimg
 {
-  background-image:url("/images/background2.png");
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-  background-position:top;
+  background: url("/images/background2.png") no-repeat left fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   border: 0px solid green;
   padding: 8px;
   margin: -8px;
@@ -61,8 +62,8 @@ div.identity
   position: fixed;
   top:96px;
   left:65%;
-  width: 300px;
-  height: 300px;
+  width: 17rem;
+  height: 20rem;
   border: 3px solid rgb(163, 163, 163);
   padding: 0px;
   margin: 10px auto;
