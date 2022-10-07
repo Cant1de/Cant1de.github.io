@@ -105,7 +105,7 @@ p
 div.topboxnevi
 {
   position:relative;
-  left:60rem;
+  left:65%;
   margin: 2rem;
   width:25rem;
 }
@@ -119,8 +119,7 @@ div.topboxnevi ul
 .nevili
 {
 	float:left;
-  list-style:none;
-
+  list-style-type:none;
 }
 .nevili a
 {
