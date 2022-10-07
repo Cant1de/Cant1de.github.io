@@ -119,8 +119,7 @@ div.topboxnevi ul
 .nevili
 {
 	float:left;
-  list-style:none;
-
+  list-style-type:none;
 }
 .nevili a
 {
