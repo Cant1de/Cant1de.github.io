@@ -1,3 +1,6 @@
+html {
+  filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+  }
 .backgroundimg
 {
   background-color:#EDEDED;
