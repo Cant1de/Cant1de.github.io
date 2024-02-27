@@ -53,6 +53,17 @@ div.main
   margin: 10px auto;
   background-color: rgb(255, 255, 255,0.8);
 }
+div.main_cv
+{
+  position: relative;
+  left:-10%;
+  width: 40%;
+  height: 1163px;
+  border: 3px solid rgb(163, 163, 163);
+  padding: 50px;
+  margin: 10px auto;
+  background-color: rgb(255, 255, 255,0.8);
+}
 div.identity
 {
   position: fixed;
@@ -107,7 +118,7 @@ div.topboxnevi
   position:relative;
   left:65%;
   margin: 2rem;
-  width:25rem;
+  width:30%;
 }
 div.topboxnevi ul
 {
